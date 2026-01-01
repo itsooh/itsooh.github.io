@@ -118,6 +118,21 @@
     }
 
     /* Work Images */
+    .company a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: inherit;
+    text-decoration: none;
+    }
+
+    .company-logo {
+    height: 1em; 
+    width: auto;
+    max-height: 1em;
+    vertical-align: middle;
+    }
+
     .work-images {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -205,12 +220,7 @@
       <div class="item">
         <div class="year">2026.03 – Now</div>
         <div>
-          <h3>Intern at 
-            <a href="https://www.cjolivenetworks.co.kr/" target="_blank" rel="noopener">
-            CJ olive networks
-            <img src="cj.png" alt="CJ Olive Networks" />
-            </a>
-          </h3> <!-- https://www.cjolivenetworks.co.kr/ -->
+          <h3>Intern at CJ olive networks <img src="cj.png" alt="CJ Olive Networks" class="company-logo" /></h3> <!-- https://www.cjolivenetworks.co.kr/ -->
           <p>Seoul, Republic of Korea</p>
         </div>
       </div>
