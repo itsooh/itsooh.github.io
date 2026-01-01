@@ -1,69 +1,210 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>환영합니다 - Hwang의 웹사이트</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #f5f6fa;
-            margin: 0;
-            padding: 0;
-            color: #222;
-        }
-        header {
-            background: #4078c0;
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-            padding: 2rem;
-        }
-        h1 {
-            margin: 0 0 1rem 0;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            color: #888;
-            font-size: 0.9rem;
-        }
-        a {
-            color: #4078c0;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soohyun Hwang</title>
+
+  <style>
+    :root {
+      --text-main: #111;
+      --text-sub: #666;
+      --border-light: #eaeaea;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      background: #fff;
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 720px;
+      padding: 60px 24px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+
+    .profile img {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile h1 {
+      font-size: 1.4rem;
+      margin: 0;
+    }
+
+    .profile p {
+      margin: 4px 0 0;
+      font-size: 0.95rem;
+      color: var(--text-sub);
+    }
+
+    .profile a {
+      color: var(--text-sub);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    /* Section */
+    section {
+      margin-bottom: 56px;
+    }
+
+    section h2 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-sub);
+      margin-bottom: 20px;
+    }
+
+    /* About */
+    .about {
+      max-width: 640px;
+    }
+
+    /* Experience */
+    .item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .item .year {
+      font-size: 0.85rem;
+      color: var(--text-sub);
+    }
+
+    .item h3 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .item p {
+      margin: 2px 0 0;
+      font-size: 0.9rem;
+      color: var(--text-sub);
+    }
+
+    /* Work Images */
+    .work-images {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin: 16px 0 24px 120px;
+    }
+
+    .work-images img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    /* Writing */
+    .writing .item {
+      grid-template-columns: 80px 1fr;
+    }
+
+    footer {
+      font-size: 0.85rem;
+      color: var(--text-sub);
+      border-top: 1px solid var(--border-light);
+      padding-top: 24px;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>환영합니다!</h1>
-        <p>Hwang의 개인 웹사이트에 오신 것을 환영합니다.</p>
-    </header>
-    <main>
-        <section>
-            <h2>소개</h2>
-            <p>이곳은 나의 프로젝트, 블로그, 그리고 다양한 정보를 공유하는 공간입니다.</p>
-        </section>
-        <section>
-            <h2>연락처</h2>
-            <p>
-                이메일: <a href="mailto:your@email.com">your@email.com</a><br>
-                GitHub: <a href="https://github.com/coding-Hwang" target="_blank">coding-Hwang</a>
-            </p>
-        </section>
-    </main>
+  <div class="container">
+
+    <!-- Profile -->
+    <div class="profile">
+      <img src="profile.jpg" alt="Profile" />
+      <div>
+        <h1>Soohyun Hwang</h1>
+        <p>Your Role · Your Location</p>
+        <a href="https://yourwebsite.com">yourwebsite.com</a>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section>
+      <h2>About</h2>
+      <p class="about">
+        I am a researcher / developer focused on building clear, meaningful
+        systems at the intersection of technology, design, and society.
+      </p>
+    </section>
+
+    <!-- Work Experience -->
+    <section>
+      <h2>Work Experience</h2>
+
+      <div class="item">
+        <div class="year">2017 – Now</div>
+        <div>
+          <h3>Senior Designer at Magic Design Co</h3>
+          <p>San Francisco, CA</p>
+        </div>
+      </div>
+
+      <div class="work-images">
+        <img src="work1.jpg" alt="">
+        <img src="work2.jpg" alt="">
+      </div>
+
+      <div class="item">
+        <div class="year">2015 – 2017</div>
+        <div>
+          <h3>Junior Designer at Creative Co</h3>
+          <p>Atlanta, GA</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="year">2014 – 2015</div>
+        <div>
+          <h3>Intern at Design Hub</h3>
+          <p>Atlanta, GA</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Writing -->
+    <section class="writing">
+      <h2>Writing</h2>
+
+      <div class="item">
+        <div class="year">2023</div>
+        <div>
+          <h3>Exploring the Intersection of Design and Technology</h3>
+          <p>Collaboration with Mia, Leo, and Ava</p>
+        </div>
+      </div>
+    </section>
+
     <footer>
-        &copy; 2024 Hwang. 모든 권리 보유.
+      © Soohyun Hwang
     </footer>
+
+  </div>
 </body>
 </html>
